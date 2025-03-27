@@ -17,8 +17,8 @@ CREATE TABLE Medico(
   Telefone      INT,
   Formacao      varchar(70),
   Salario       int,
-  Horario       varchar(50)
-);
+  Horario       varchar(50),
+  Cpf           varchar(30));
 
 
 CREATE TABLE Enfermeiro(
@@ -29,8 +29,11 @@ CREATE TABLE Enfermeiro(
   Telefone      INT,
   Formacao      varchar(70),
   Salario       int,
-  Horario       varchar(50)
+  Horario       varchar(50),
+  Cpf           varchar(30)
 );
+
+INSERT INTO Enfermeiro VALUES (01,"Nome", "01/10/2008", "email@gmail.com",5581989639664, "formacao", "10", "12:00 as 20:00)", "12312312312")
 
 CREATE TABLE Receita(
   IdR   		INT 	PRIMARY KEY,
