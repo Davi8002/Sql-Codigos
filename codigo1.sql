@@ -50,3 +50,16 @@ CREATE TABLE Receita(
 );
 
 INSERT INTO Receita VALUES (01, 200, "27/03/2025", "Heh");
+
+
+
+CREATE TABLE Atende(
+  IdA    		INT 	PRIMARY KEY,
+  IdP           INT,
+  IdM           INT,
+  Hora          varchar(70),
+  Data          varchar(70),
+  Area          varchar(70),
+  FOREIGN KEY (IdP) REFERENCES Paciente(IdP),
+  FOREIGN KEY (IdM) REFERENCES Medico(IdM)
+); 
