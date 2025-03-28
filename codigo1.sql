@@ -1,3 +1,7 @@
+drop table Customers;
+drop table Orders;
+drop table Shippings;
+
 
 CREATE TABLE Paciente(
   IdP			INT 	PRIMARY KEY,
