@@ -20,3 +20,7 @@ CREATE TABLE Status(
   Intelecto INT,
   Pontos_Disponiveis INT
 );
+
+INSERT INTO Personagem VALUES (01,"Sung Jinwoo", "Necromante", 01, "S");
+
+INSERT INTO Status VALUES (01,"100/100", "10/10", "50/50", 95, 87, 39, 16, 57, 7);
