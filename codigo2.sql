@@ -36,3 +36,5 @@ INSERT INTO Status VALUES (03,"10000/10000", "500/500", "300/300", 0, 0, 0, 0, 0
 
 INSERT INTO Personagem VALUES (03,"Ser Absoluto", "Desconhecida", 03, "Desconhecido");
 
+
+SELECT Nome FROM Personagem WHERE Nome = "Sung Jinwoo"; 
