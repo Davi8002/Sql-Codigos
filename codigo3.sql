@@ -101,7 +101,7 @@ VALUES (1, 'aluno1@email.com', 'Davi Ribeiro', 'senha123', '2008-01-10', 1, 1);
 INSERT INTO Atividade (Id_Atividade, Id_Disciplina, Nome, Descricao, Data_Maxima, Nota_Max)
 VALUES (1, 1, 'Projeto de banco de dados', 'Fazer um projeto de banco de dados', '2025-04-10', 10);
 
-INSERT INTO Publica (Id_Envio, Id_Atividade, Id_Professor, Data_Envio, Hora_Envio, Status)
+INSERT INTO Publica (Id_Publica, Id_Atividade, Id_Professor, Data_Envio, Hora_Envio, Status)
 VALUES (1, 1, 1, '2025-04-09', '08:00:00', TRUE);
 
 INSERT INTO Entrega (Id_Entrega, Id_Atividade, Id_Aluno, Data_Entrega, Hora_Entrega, Tempo_Atv, Nota_Atv)
