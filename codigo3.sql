@@ -112,8 +112,6 @@ INSERT INTO Entrega (Id_Entrega, Id_Atividade, Id_Aluno, Data_Entrega, Hora_Entr
 VALUES (1, 1, 1, '2025-04-10', '10:30:00', 45, 9);
 
 
-
-
 SELECT Nome, Email
 FROM Aluno;
 
@@ -150,6 +148,36 @@ SELECT Id_Aluno
 FROM Entrega
 WHERE Tempo_Atv < 5;
 
+ALTER TABLE Aluno
+ADD Genero VARCHAR(10);
+
+ALTER TABLE Atividade
+RENAME COLUMN Descricao TO Descricao_Completa;
+
+ALTER TABLE Aluno
+ADD Matricula VARCHAR(20);
+
+ALTER TABLE Professor
+ADD Especialidade VARCHAR(100);
 
 
+UPDATE Aluno
+SET Nome = 'Davi Ribeiro Borges'
+WHERE Id_Aluno = 1;
 
+UPDATE Publica
+SET Status = FALSE
+WHERE Id_Publica = 1;
+
+UPDATE Professor
+SET Telefone = 12345678912
+WHERE Id_Professor = 1;
+
+DELETE FROM Entrega
+WHERE Id_Entrega = 1;
+
+DELETE FROM Publica
+WHERE Id_Publica = 1;
+
+DELETE FROM Turma
+WHERE Id_Turma = 1;
