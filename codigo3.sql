@@ -173,11 +173,16 @@ UPDATE Professor
 SET Telefone = 12345678912
 WHERE Id_Professor = 1;
 
+
 DELETE FROM Entrega
 WHERE Id_Entrega = 1;
 
 DELETE FROM Publica
 WHERE Id_Publica = 1;
 
-DELETE FROM Turma
-WHERE Id_Turma = 1;
+DELETE FROM Aluno 
+WHERE Id_Aluno = 1;
+
+DELETE FROM Turma 
+WHERE Id_Turma != 2;
+
