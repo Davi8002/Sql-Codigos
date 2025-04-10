@@ -83,6 +83,10 @@ CREATE TABLE Entrega (
     FOREIGN KEY (Id_Aluno) REFERENCES Aluno(Id_Aluno)
 );
 
+
+
+
+    
 INSERT INTO Turma (Id_Turma, Ano_Letivo, Quantidade_Alunos, Codigo, Turno, Sala)
 VALUES (1, '2025', 30, '123', 'Manhã', '101');
 
@@ -106,3 +110,46 @@ VALUES (1, 1, 1, '2025-04-09', '08:00:00', TRUE);
 
 INSERT INTO Entrega (Id_Entrega, Id_Atividade, Id_Aluno, Data_Entrega, Hora_Entrega, Tempo_Atv, Nota_Atv)
 VALUES (1, 1, 1, '2025-04-10', '10:30:00', 45, 9);
+
+
+
+
+SELECT Nome, Email
+FROM Aluno;
+
+SELECT Id_Aluno
+FROM Entrega
+WHERE Nota_Atv > 7;
+
+SELECT Codigo
+FROM Turma
+WHERE Sala = 101;
+
+SELECT Nome, Telefone
+FROM Professor;
+
+SELECT Data_Maxima, Nome
+FROM Atividade
+WHERE Id_Disciplina = 1;
+
+SELECT Id_Responsavel
+FROM Aluno;
+
+SELECT Status
+FROM Publica
+WHERE Id_Professor != 2;
+
+SELECT Id_Responsavel
+FROM Aluno;
+
+SELECT Nome, Id_Aluno
+FROM Aluno
+WHERE Id_Turma = 1;
+
+SELECT Id_Aluno
+FROM Entrega
+WHERE Tempo_Atv < 5;
+
+
+
+
